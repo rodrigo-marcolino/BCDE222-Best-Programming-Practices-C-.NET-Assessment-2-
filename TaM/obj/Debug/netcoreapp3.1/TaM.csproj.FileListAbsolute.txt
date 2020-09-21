@@ -1,0 +1,13 @@
+C:\Users\rodrigo\source\repos\TaM\TaM\bin\Debug\netcoreapp3.1\TaM.exe
+C:\Users\rodrigo\source\repos\TaM\TaM\bin\Debug\netcoreapp3.1\TaM.deps.json
+C:\Users\rodrigo\source\repos\TaM\TaM\bin\Debug\netcoreapp3.1\TaM.runtimeconfig.json
+C:\Users\rodrigo\source\repos\TaM\TaM\bin\Debug\netcoreapp3.1\TaM.runtimeconfig.dev.json
+C:\Users\rodrigo\source\repos\TaM\TaM\bin\Debug\netcoreapp3.1\TaM.dll
+C:\Users\rodrigo\source\repos\TaM\TaM\bin\Debug\netcoreapp3.1\TaM.pdb
+C:\Users\rodrigo\source\repos\TaM\TaM\obj\Debug\netcoreapp3.1\TaM.csprojAssemblyReference.cache
+C:\Users\rodrigo\source\repos\TaM\TaM\obj\Debug\netcoreapp3.1\TaM.AssemblyInfoInputs.cache
+C:\Users\rodrigo\source\repos\TaM\TaM\obj\Debug\netcoreapp3.1\TaM.AssemblyInfo.cs
+C:\Users\rodrigo\source\repos\TaM\TaM\obj\Debug\netcoreapp3.1\TaM.csproj.CoreCompileInputs.cache
+C:\Users\rodrigo\source\repos\TaM\TaM\obj\Debug\netcoreapp3.1\TaM.dll
+C:\Users\rodrigo\source\repos\TaM\TaM\obj\Debug\netcoreapp3.1\TaM.pdb
+C:\Users\rodrigo\source\repos\TaM\TaM\obj\Debug\netcoreapp3.1\TaM.genruntimeconfig.cache
