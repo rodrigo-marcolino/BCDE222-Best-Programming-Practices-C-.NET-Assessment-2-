@@ -12,6 +12,9 @@ namespace TaM
         public int height;
         private string data;
         public Square[,] allMySquares;
+        public int[] theseus;
+        public int[] minotaur;
+        public int[] exit;
 
         public Level(string name, int width, int height, string data)
         {
@@ -49,39 +52,47 @@ namespace TaM
         public void SetMinotaur(string data)
         {
             //split string in half 
-            char[] minotour = data.ToCharArray();
+            char[] minotaur = data.ToCharArray();
             //first half height second half width 
-            int y = int.Parse(minotour[0].ToString() + minotour[1].ToString());
-            int x = int.Parse(minotour[2].ToString() + minotour[3].ToString());
+            int y = int.Parse(minotaur[0].ToString() + minotaur[1].ToString());
+            int x = int.Parse(minotaur[2].ToString() + minotaur[3].ToString());
 
             //access square & change bool to true
             allMySquares[y, x].Minotaur = true;
-            
+            this.minotaur = new int[] { y, x };
+
         }
 
         public void SetTheseus(string data)
-        {
-            //split string in half 
-            char[] theseus = data.ToCharArray();
-            //first half height second half width 
+        {  
+            char[] theseus = data.ToCharArray(); 
             int y = int.Parse(theseus[0].ToString() + theseus[1].ToString());
             int x = int.Parse(theseus[2].ToString() + theseus[3].ToString());
-
-            //access square & change bool to true
             allMySquares[y, x].Theseus = true;
+            this.theseus = new int[] { y, x };
+
 
         }
         public void SetExit(string data)
-        {
-            //split string in half 
+        { 
             char[] exit = data.ToCharArray();
-            //first half height second half width 
             int y = int.Parse(exit[0].ToString() + exit[1].ToString());
             int x = int.Parse(exit[2].ToString() + exit[3].ToString());
-
-            //access square & change bool to true
             allMySquares[y, x].Exit = true;
+            this.exit = new int[] { y, x };
 
+        }
+        public int[] GetTheseus()
+        {
+            return this.theseus;
+        }
+        public int[] GetMinotaur()
+        {
+            return this.minotaur;
+        }
+        public int[] GetExit()
+        {
+            return this.exit;
         }
 
 

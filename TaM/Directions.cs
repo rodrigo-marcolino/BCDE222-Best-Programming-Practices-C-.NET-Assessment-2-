@@ -4,12 +4,13 @@ using System.Text;
 
 namespace TaM
 {
-    enum Directions
+    public enum Moves
     {
         UP,
         DOWN,
         LEFT,
-        RIGHT
+        RIGHT,
+        PAUSE
     }
 
 }

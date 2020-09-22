@@ -11,7 +11,7 @@ namespace TaM
         int MinotuarRow { get; }
         int MinitaurColumn { get; }
         int MoveCount { get; }
-        void MoveTheseus(Directions direction);
+        void MoveTheseus(Moves move);
         bool IsTheseusDead();
         bool HasTheseusEscaped();
 

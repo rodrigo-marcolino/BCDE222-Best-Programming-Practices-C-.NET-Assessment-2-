@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using TaM;
-using TaMTests;
 
 namespace TaMTests
 {
@@ -424,7 +423,7 @@ namespace TaMTests
             bool actuallyHas = targetSquare.Bottom;
             Assert.AreEqual(expected, actuallyHas);
         }
-        /*
+        
         void MakeTheseus3By3Game()
         {
             game = new Game();
@@ -789,6 +788,6 @@ actualMinotaurAtDestination };
             bool expectedWin = false;
             bool actualWin = game.HasTheseusWon;
             Assert.AreEqual(expectedWin, actualWin);
-        } */
+        } 
     }
 }
