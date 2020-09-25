@@ -60,9 +60,8 @@ namespace TaM
 
 		public void SetLevel(string name)
         {
+
 			
-			// check if name = LevNames
-			// loop through each name in list
 			foreach (string levelName in this.LevNames) {
 				if (levelName == name)
                 {
@@ -73,18 +72,13 @@ namespace TaM
 
         public void MoveTheseus(Moves move)
         {
-			//where is theseus  
 			int[] theseus = CurrentLevel.GetTheseus();
-			//what is the new square theseus is moving to
-			//get current x y of theseus 
-			//depending on direction plus or minus from the x y values
+			
 			int x = theseus[1];
 			int y = theseus[0];
 			bool canMove = false;
 			Square origin = WhatIsAt(y, x);
-			//can theseus move to that square
-			//if wall is blocking theseus cannot move
-			//else move theseus
+			
 			switch (move) 
 			{
 				case Moves.UP:
@@ -120,8 +114,7 @@ namespace TaM
 					break;
 			
             }
-			//use what is at method to select new square for theseus 
-			//add one to move count 
+			
 			if (canMove)
             {
 				Square destination = WhatIsAt(y, x);
@@ -133,10 +126,7 @@ namespace TaM
 			TheseusWon();
 
 		}
-		//figure out what way the minotaur needs to move 
-		//minotaur always move towards theseus 
-		// create variable that will hold the move
-		// set x and y of minotaur like i did with theseus
+		
 		public void MoveMinotaur()
         {
 			int[] minotaur = CurrentLevel.GetMinotaur();
@@ -147,10 +137,7 @@ namespace TaM
 			Moves move = Moves.PAUSE;
 
 			int[] theseusLocat = CurrentLevel.GetTheseus();
-			// find the difference of theseus x and minotaur x
-			// find the difference between theseus y and theseus x
-			// if number is above 0 set move as right,
-			// if number is below 0 set move as left
+			
 			if (theseusLocat[1] - minotaur[1] != 0)
 			{
 				if (theseusLocat[1] - minotaur[1] < 0)
@@ -159,8 +146,7 @@ namespace TaM
 				}
 				else move = Moves.RIGHT;
 			}
-			// if number is above 0 set move as down
-			// if number is below 0 set move as up
+			
 			else if (theseusLocat[0] - minotaur[0] != 0)
 			{
 				if (theseusLocat[0] - minotaur[0] < 0)
@@ -211,9 +197,7 @@ namespace TaM
 			MinotaurWon();
 
 		}
-		//is the minotaur and theseus in the same square
-		//if yes minotaur has won
-		//this is a check method and needs to be called after the minotaur moves
+		
 		public void MinotaurWon()
 		{ 
 			int[] theseus = CurrentLevel.GetTheseus();

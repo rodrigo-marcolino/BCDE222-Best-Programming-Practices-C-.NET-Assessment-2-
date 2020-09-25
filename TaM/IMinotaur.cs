@@ -6,7 +6,12 @@ namespace TaM
 {
 	interface IMinotaur
 	{
-        void EatTheseus();
-	}
+        void KillTheseus();
+    }
+
+    interface CopyOfIMinotaur
+    {
+        void KillTheseus();
+    }
 
 }

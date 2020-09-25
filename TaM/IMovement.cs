@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TaM
 {
-    interface IMoveable
+    interface IMovement
     {
         void GoUp();
         void GoDown();

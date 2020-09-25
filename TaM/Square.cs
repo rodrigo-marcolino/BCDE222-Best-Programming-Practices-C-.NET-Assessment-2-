@@ -28,7 +28,6 @@ namespace TaM
             SetWalls(data);
         }
 
-        //reading the string to set the walls
         void SetWalls(string data)
         {
             char[] walls = data.ToCharArray();

@@ -51,7 +51,7 @@ namespace TaM
 							+ " 0011 0010 0010 0010 0010 0010 0110");
 			Console.WriteLine($"CurrentLevel: {game.CurrentLevelName}.{ game.LevelWidth}x { game.LevelHeight}");
 			Console.WriteLine(game);
-			/*
+			
 			game.SetLevel("*** complex game");
 			Console.WriteLine("Start - Theseus wins complex game");
 			Console.WriteLine(game);
@@ -132,7 +132,7 @@ namespace TaM
 			Console.WriteLine($"Minotaur Win: {game.HasMinotaurWon}\n");
 
 			Console.ReadKey();
-			*/
+			
 		}
 	}
 }

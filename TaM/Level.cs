@@ -33,7 +33,7 @@ namespace TaM
             string Minotaur = dataArray[0];
             string Theseus = dataArray[1];
             string Exit = dataArray[2];
-           // iterate through the rest of the array using the strings to create new squares
+
             for(int i = 3, y = 0; i < dataArray.Length & y < this.height;)
             { 
                 for (int x = 0; x < this.width; x++, i++)
@@ -51,13 +51,11 @@ namespace TaM
 
         public void SetMinotaur(string data)
         {
-            //split string in half 
             char[] minotaur = data.ToCharArray();
-            //first half height second half width 
+
             int y = int.Parse(minotaur[0].ToString() + minotaur[1].ToString());
             int x = int.Parse(minotaur[2].ToString() + minotaur[3].ToString());
 
-            //access square & change bool to true
             allMySquares[y, x].Minotaur = true;
             this.minotaur = new int[] { y, x };
 
